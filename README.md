@@ -1,6 +1,6 @@
 # Git Tutorials
 
-# Git & GitHub
+### About Git & GitHub
 
 - Git is a software and GitHub is a service to host it online.
 
@@ -17,14 +17,14 @@
 - Learning more...
 
 # Terminologies
-- How to check the git version, type:
+### How to check the git version, type:
 ```bash
    git --version
    ```
 
 - 'ls' to check the list of files contain in that file
 
-# How to configure Git
+### How to configure Git
 - How to config git for the first time
 
 ```bash
@@ -32,12 +32,13 @@
    git config --global user.name "Your Name"
    ```
 
-- How to check the configuration settings:
+### How to check the configuration settings:
 ```bash
    git config --list
    ```
 
-- How to start
+### How to start
+- First check the status of file: It will tell you about the files status either about changes or about initalised for git or not
 ```bash
    git status
    ```
@@ -47,19 +48,20 @@
    git init
    ```
 
-## Atomic Commit
+### Git recommends Atomic Commit
 1. Keep commits centric to one feature, one component or on fix. Focus on one thing.
+
 2. Present or Past Message:
 - Depends {Present Tense, Imperative}
 - Give order to code base
 - Don't Care
 
-## To check logs of change
+### How to check changes done yet
 ```bash
 git log
 ```
 
-## To check logs in oneline
+### How to check logs in oneline
 ```bash
 git log --oneline
 ```
