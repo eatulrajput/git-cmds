@@ -66,7 +66,7 @@ git log
 git log --oneline
 ```
 
-### gitignore
+#### .gitignore
 `Git` has `.gitignore` file which contains the some important files.
 
 #### .env
@@ -75,3 +75,6 @@ git log --oneline
 These are the files which you will never want to commit in your repository and never want to add in your GitHub
 
 `.gitignore` file contains files name which you don't want to show to others or `push` in your repository. These files can be `virtual environment files` or `node-modules` or `.env` etc.
+
+#### .gitkeep
+`.gitkeep` : Due to presence of this file, `git` will not track empty files.
