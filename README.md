@@ -65,3 +65,13 @@ git log
 ```bash
 git log --oneline
 ```
+
+### gitignore
+`Git` has `.gitignore` file which contains the some important files.
+
+#### .env
+`.env`: This is a files where contains API secrets, API Key, Payment Gateway Code
+
+These are the files which you will never want to commit in your repository and never want to add in your GitHub
+
+`.gitignore` file contains files name which you don't want to show to others or `push` in your repository. These files can be `virtual environment files` or `node-modules` or `.env` etc.
