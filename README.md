@@ -2,7 +2,7 @@
 
 ### About Git & GitHub
 
-- Git is a software and GitHub is a service to host it online.
+- Git is a software and GitHub is a service to host it online. It is a version control system which allows us to track changes in files and folders
 
 - Git creates checkpoints for the changes you make while doing.
 - It tracks the changes.
