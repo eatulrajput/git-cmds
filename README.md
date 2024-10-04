@@ -79,6 +79,19 @@ These are the files which you will never want to commit in your repository and n
 #### .gitkeep
 `.gitkeep` : Due to presence of this file, `git` will not track empty folders.
 
+### How to push to repository
+1. Use git add:  
+```bash
+git add file-name
+```
+2. Add a message to show what changes have been done:
+```bash
+git commit -m "Your message regarding changes done"
+```
+3. git push
+```bash
+git push
+```
 ### Git Branches
 - In Git, a branch is a lightweight, movable pointer to a commit. Branches allow you to work on different versions of a project simultaneously without affecting the main codebase. Here's a breakdown of how they work:
 
@@ -87,10 +100,35 @@ These are the files which you will never want to commit in your repository and n
 1. Default Branch (main or master):
 - When you initialize a Git repository, Git creates a default branch, usually named `main` or `master`. This branch serves as the base of your project and often contains the production-ready code.
 
+- To see the branches:
+```bash
+git branch
+```
+
 2. Creating New Branches:
 
-    You can create new branches to work on features, bug fixes, or experiments. New branches are typically created from an existing branch, often from `main`, so that you can isolate your work and avoid disturbing the main codebase.
+- You can create new branches to work on features, bug fixes, or experiments. New branches are typically created from an existing branch, often from `main`, so that you can isolate your work and avoid disturbing the main codebase.
 
 ```bash
 git branch feature-new-function
 ```
+- To switching between branch, here checkout will not create a branch if not exist:
+```bash
+git checkout feature-new-function
+```
+
+
+- Or, to create and switch to the new branch in one step:
+```bash
+git checkout -b feature-new-function
+```
+- Or with switch:
+```bash
+git switch feature-new-function
+```
+- switch moves to the branch it has asked for, if that branch not exist even then it creates that branch and switches to that new branch
+
+```bash
+git switch -c feature-new-function
+```
+- `-c` works as to create here.
