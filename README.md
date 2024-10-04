@@ -175,6 +175,6 @@ git branch -m new_branch_name
 ```bash
 git branch -m old_branch_name new_branch_name
 ```
-<hr>
+<hr style="color:#ffffff">
 <br>
 The git diff command in Git shows the differences between various states of a repository. It is commonly used to compare changes between files, commits, branches, and more. Here's how git diff works and some common use cases:
