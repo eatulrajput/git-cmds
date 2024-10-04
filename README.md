@@ -207,3 +207,47 @@ In Git, `git stash` is a useful command that temporarily saves your changes (bot
 ```bash
 git stash
 ```
+
+2. Naming the stash:
+```bash
+git stash save "Work in progress on X feature"
+```
+3. Want to see the stash list:
+```bash
+git stash list
+```
+4. Apply the stash:
+```bash
+git stash apply
+``` 
+### Git Tags
+Tags are a way to mark a specific point in your repository.
+#### How to create a tag
+```bash
+git tag <tag-name>
+```
+#### Create an annotated tag
+```bash
+git tag -a <tag-name> -m "Release 1.0"
+```
+
+#### List of all tag:
+```bash
+git tag
+```
+
+### git rebase
+Git rebase is used to change the base of a branch
+
+### git reflog
+`git reflog` shows history of your commits and allows you to see the changes that you have made to your repository over time.
+```bash
+git reflog
+```
+
+If you accidently deleted a branch or made changes that are no longer visible in history, you can often recover them using reflog. First find the reference to the branch or changes existed, and then reset your branch to that reference.
+
+```bash
+git reflog <commit-hash>
+git reset --hard <commit-hash>
+
