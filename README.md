@@ -82,10 +82,15 @@ These are the files which you will never want to commit in your repository and n
 ### Git Branches
 - In Git, a branch is a lightweight, movable pointer to a commit. Branches allow you to work on different versions of a project simultaneously without affecting the main codebase. Here's a breakdown of how they work:
 
-## Key Concepts of Git Branches:
+### Key Concepts of Git Branches:
 
-### Default Branch (main or master):
+1. Default Branch (main or master):
 - When you initialize a Git repository, Git creates a default branch, usually named `main` or `master`. This branch serves as the base of your project and often contains the production-ready code.
-```bash
 
+2. Creating New Branches:
+
+    You can create new branches to work on features, bug fixes, or experiments. New branches are typically created from an existing branch, often from `main`, so that you can isolate your work and avoid disturbing the main codebase.
+
+```bash
+git branch feature-new-function
 ```
