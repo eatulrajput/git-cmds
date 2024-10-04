@@ -199,3 +199,6 @@ git diff --staged
 - You can compare the changes between two branches. For example, to compare feature-branch with main, you can run:
 
 git diff main feature-branch
+
+### Git stash
+In Git, `git stash` is a useful command that temporarily saves your changes (both tracked and untracked files) without committing them, allowing you to switch branches or perform other tasks without losing your work. Once you're ready to return to those changes, you can "unstash" them and continue working where you left off.
