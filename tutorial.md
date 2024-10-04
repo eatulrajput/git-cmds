@@ -1,0 +1,134 @@
+# Git Tutorials
+
+### About Git & GitHub
+
+- Git is a software and GitHub is a service to host it online. It is a version control system which allows us to track changes in files and folders
+
+- Git creates checkpoints for the changes you make while doing.
+- It tracks the changes.
+
+- It was not the only services which were used. There were proprietary softwares there before git.
+
+# Roadmap to learn:
+- Basics
+- Daily Use
+- Facing the problems
+- Solving problems
+- Learning more...
+
+# Terminologies
+### How to check the git version, type:
+```bash
+   git --version
+   ```
+
+- 'ls' to check the list of files contain in that file
+
+### How to configure Git
+- How to config git for the first time
+
+```bash
+   git config --global user.email "youremail@example.com"
+   git config --global user.name "Your Name"
+   ```
+
+### How to check the configuration settings:
+```bash
+   git config --list
+   ```
+
+### How to start
+- First check the status of file: It will tell you about the files status either about changes or about initalised for git or not
+```bash
+   git status
+   ```
+
+- Initialise git
+```bash
+   git init
+   ```
+
+### Git recommends Atomic Commit
+1. Keep commits centric to one feature, one component or on fix. Focus on one thing.
+
+2. Present or Past Message:
+- Depends {Present Tense, Imperative}
+- Give order to code base
+- Don't Care
+
+### How to check changes done yet
+```bash
+git log
+```
+
+### How to check logs in oneline
+```bash
+git log --oneline
+```
+
+#### .gitignore
+`Git` has `.gitignore` file which contains the some important files.
+
+#### .env
+`.env`: This is a files where contains API secrets, API Key, Payment Gateway Code
+
+These are the files which you will never want to commit in your repository and never want to add in your GitHub
+
+`.gitignore` file contains files name which you don't want to show to others or `push` in your repository. These files can be `virtual environment files` or `node-modules` or `.env` etc.
+
+#### .gitkeep
+`.gitkeep` : Due to presence of this file, `git` will not track empty folders.
+
+### How to push to repository
+1. Use git add:  
+```bash
+git add file-name
+```
+2. Add a message to show what changes have been done:
+```bash
+git commit -m "Your message regarding changes done"
+```
+3. git push
+```bash
+git push
+```
+### Git Branches
+- In Git, a branch is a lightweight, movable pointer to a commit. Branches allow you to work on different versions of a project simultaneously without affecting the main codebase. Here's a breakdown of how they work:
+
+### Key Concepts of Git Branches:
+
+1. Default Branch (main or master):
+- When you initialize a Git repository, Git creates a default branch, usually named `main` or `master`. This branch serves as the base of your project and often contains the production-ready code.
+
+- To see the branches:
+```bash
+git branch
+```
+
+2. Creating New Branches:
+
+- You can create new branches to work on features, bug fixes, or experiments. New branches are typically created from an existing branch, often from `main`, so that you can isolate your work and avoid disturbing the main codebase.
+
+```bash
+git branch feature-new-function
+```
+- To switching between branch, here checkout will not create a branch if not exist:
+```bash
+git checkout feature-new-function
+```
+
+
+- Or, to create and switch to the new branch in one step:
+```bash
+git checkout -b feature-new-function
+```
+- Or with switch:
+```bash
+git switch feature-new-function
+```
+- switch moves to the branch it has asked for, if that branch not exist even then it creates that branch and switches to that new branch
+
+```bash
+git switch -c feature-new-function
+```
+- `-c` works as to create here.
