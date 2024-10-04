@@ -85,7 +85,7 @@ These are the files which you will never want to commit in your repository and n
 ## Key Concepts of Git Branches:
 
 ### Default Branch (main or master):
-        When you initialize a Git repository, Git creates a default branch, usually named `main` or `master`. This branch serves as the base of your project and often contains the production-ready code.
+When you initialize a Git repository, Git creates a default branch, usually named `main` or `master`. This branch serves as the base of your project and often contains the production-ready code.
 ```bash
 
 ```
