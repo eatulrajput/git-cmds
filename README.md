@@ -112,7 +112,7 @@ git branch
 ```bash
 git branch feature-new-function
 ```
-- To switching between branch, here checkout will not create a branch if not exist:
+3. To switching between branch, here checkout will not create a branch if not exist:
 ```bash
 git checkout feature-new-function
 ```
@@ -132,3 +132,22 @@ git switch feature-new-function
 git switch -c feature-new-function
 ```
 - `-c` works as to create here.
+
+4. Merging Branches:
+
+- After completing work on a branch, you can merge the changes back into another branch, typically the main branch.
+- Example of merging:
+```bash
+git checkout main
+git merge feature-new-function
+```
+5. Branch Management:
+
+- You can view all branches in a repository by running:
+```bash
+git branch
+```
+- To delete a branch that is no longer needed:
+```bash
+git branch -d feature-new-function
+```
