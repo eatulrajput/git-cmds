@@ -177,4 +177,25 @@ git branch -m old_branch_name new_branch_name
 ```
 
 <br>
-The git diff command in Git shows the differences between various states of a repository. It is commonly used to compare changes between files, commits, branches, and more. Here's how git diff works and some common use cases:
+The `git diff` command in Git shows the differences between various states of a repository. It is commonly used to compare changes between files, commits, branches, and more. Here's how git diff works and some common use cases:
+
+### Basic Use of git diff
+
+1. Show Unstaged Changes:
+- If you want to see the changes in your working directory that haven't been staged (i.e., not added by git add), you can run:
+```bash
+git diff
+```
+
+2.Show Staged Changes:
+
+- To see the changes that have been staged for the next commit (i.e., after using git add), but not yet committed, use:
+
+```bash
+git diff --staged
+```
+3. Compare Two Branches:
+
+- You can compare the changes between two branches. For example, to compare feature-branch with main, you can run:
+
+git diff main feature-branch
