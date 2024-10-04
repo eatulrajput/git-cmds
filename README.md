@@ -145,9 +145,9 @@ git merge feature-new-function
 
 - You can view all branches in a repository by running:
 ```bash
-git branch
+`git` branch
 ```
 - To delete a branch that is no longer needed:
 ```bash
-git branch -d feature-new-function
+`git` branch -d feature-new-function
 ```
